@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"
+</head>
+<body>
+    <header class="header">
+    <h1 id="title">Future App Ideas</h1>
+        <p id="description"><i>Thank you for taking the time to spread great app ideas</i></p>
+    </header>
+    <div class="rygg">
+        <form id="survey-form">
+            <fieldset>
+                <h3>Contact information:</h3>
+                <label id="name-label" for="name">Enter Your Name: 
+                    <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="ex. Bislim Koci" 
+                    class="name"
+                    required
+                    />
+                </label>
+                <label id="email-label" for="email">Enter Your Email: 
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="ex. Bislim123@hotmail.com" 
+                    class="email"
+                    required
+                    />
+                </label>
+                <label id="number-label" for="number">Enter Your Age (optional): 
+                    <input 
+                    type="number" 
+                    id="number" 
+                    min="18" 
+                    max="120" 
+                    placeholder="ex. 23"
+                    class="number"
+                    />
+                </label>
+            </fieldset>
+            <fieldset class="second">
+                <h3>App information:</h3>
+                <section class="purpose">
+                    <label for="business media entertainment">Purpose:</label>
+                        <input type="checkbox" id="business" name="purpose" value="business" class="business" checked>
+                            <label for="business">Business</label>
+                        <input type="checkbox" id="media" name="purpose" value="media" class="media">
+                            <label for="media">Media</label>
+                        <input type="checkbox" id="entertainment" name="purpose" value="entertainment" class="entertainment">
+                            <label for="entertainment">Entertainment</label>
+                </section>
+                <section class="write">
+                        <label for="info">Write your app idea in detail:
+                            <textarea name="info" id="info" cols="50" rows="5" placeholder="Wrrite here..." class="info"></textarea>                        
+                     </label>
+               </section>
+                <section class="dots">
+                    <label for="1 2 3 4 5" class="mix">Rate your idea from worst to best: 
+                        <input 
+                        type="radio" 
+                        id="1" 
+                        value="worst" 
+                        name="rate"
+                        class="rate1"
+                        /> 
+                        <label for="1">Worst</label>
+                        <input 
+                        type="radio" 
+                        id="2" 
+                        value="bad" 
+                        name="rate"
+                        class="rate2"
+                        /> 
+                        <label for="2">Bad</label>
+                        <input 
+                        type="radio" 
+                        id="3" 
+                        value="ok" 
+                        name="rate"
+                        class="rate3"
+                        checked
+                        /> 
+                        <label for="3">Ok</label>
+                        <input 
+                        type="radio" 
+                        id="4" 
+                        value="good" 
+                        name="rate"
+                        class="rate4"
+                        /> 
+                        <label for="4">Good</label>
+                        <input 
+                        type="radio" 
+                        id="5" 
+                        value="best" 
+                        name="rate"
+                        class="rate5"
+                        /> 
+                        <label for="5">Best</label>
+                    </label>
+                </section>
+            </fieldset>
+            <fieldset class="discovery">
+                <h3>Discovery:</h3>
+                <label for="dropdown" >How did you discover this page?
+                    <select name="utforsk" id="dropdown" class="dropdown">
+                        <option value="">Select an Option</option>
+                        <option value="1">From a Friend</option>
+                        <option value="2">From School</option>
+                        <option value="3">From a Social Media Ad</option>
+                        <option value="4">Other</option>
+                     </select>
+                 </label>
+            </fieldset>
+            <section class="skicka">
+                 <input type="submit" id="submit" value="submit" class="submit">
+            </section>
+        </form>
+    </div>
+</body>
+</html>
