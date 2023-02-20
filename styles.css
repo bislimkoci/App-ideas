@@ -1,0 +1,73 @@
+body {
+    width: auto;
+    height: auto;
+    font-family: 'Anek Malayalam', sans-serif;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_696209402_2000133320009280405_375492.jpg);
+
+}
+
+header {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);;
+}
+
+.rygg {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 700px;
+    height: 100%;
+    margin: auto;
+    color: antiquewhite;
+    padding: 30px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    margin: 5px 0;
+}
+
+.info {
+    display: block;
+    margin-top: 5px;
+}
+
+.submit {
+    width: 50%;
+    height: 30px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.skicka {
+    margin-left: 175px;
+}
+
+.name, .email, .number {
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+
+section {
+    padding-bottom: 25px;
+}
+
+.discovery {
+    padding-bottom: 50px;
+    display: block;
+}
+
+.dropdown {
+    display: flex;
+    width: 90%;
+    height: 25px;
+    margin-top: 5px;
+}
